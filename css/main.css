@@ -94,6 +94,31 @@ ul {
         
     line-height: 2.13333;
     color: #4a4c53;
-    
+       
 }
 
+
+/* button explore */
+.btn_explore_container{
+    margin-top: 47px;
+}
+
+.explore{
+    width: 180px;
+    height: 60px;
+    
+    line-height: 3.52941;          
+}
+
+.buner_explore_container{
+    position: relative;
+}
+
+.buner_explore_container::before{
+        content: url('./element3.svg');
+        position: absolute;
+        left: -3%;
+        top: 5%;
+        
+        transform: translateY(-80%);
+}
