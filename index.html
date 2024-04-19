@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/icon" >
 </head>
-<body>
+<body class="container">
     <div>
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
@@ -41,9 +41,9 @@
                         </li>
                     </ul>
 
-                    <div>
-                        <button class="btn btn-outline-success me-2" type="button">Login</button>
-                        <button class="btn btn-outline-success me-2" type="button">Register</button>
+                    <div class="nav_button_group">
+                        <button class="btn btn-outline-success me-3" type="button">Login</button>
+                        <button class="btn btn-outline-success" type="button">Register</button>
                     </div>
                     
                 </div>
@@ -51,19 +51,19 @@
             </div>
         </nav>
 
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid explore_container">
+            <div class="row ">
                 <div class="col">
                     <h1 class="header_title">Explore and Travel</h1>
 
-                    <div>
-                        <h2>Holiday finger</h2>
+                    <div class="holiday_title_wrap">
+                        <h2 class="holiday_title">Holiday finger</h2>
                     </div>
                     <!-- form -->
-                    <div class="row g-5 my-5">
-                        <div class="col-md">
-                            <div class="form-floating">
-                                <select class="form-select " id="floatingSelectGrid">
+                    <div class="row" style="margin-bottom: 35px;">
+                        <div class="col">
+                            <div class="form-floating" style="width: 220px; height: 52px;">
+                                <select class="form-select border border-secondary rounded-3" id="floatingSelectGrid" >
                                     <option selected>Location</option>
                                     <option value="1">Destination</option>
                                     <option value="2">Location</option>
@@ -71,9 +71,9 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md">
-                            <div class="form-floating">
-                                <select class="form-select" id="floatingSelectGrid">
+                        <div class="col">
+                            <div class="form-floating" style="width: 220px; height: 52px;">
+                                <select class="form-select border border-secondary rounded-3" id="floatingSelectGrid" >
                                     <option selected>Activity</option>
                                     <option value="1">Travel and tourism</option>
                                     <option value="2">Sport and fitness</option>
@@ -83,10 +83,10 @@
                         </div>
                     </div>
 
-                    <div class="row g-5">
-                    <div class="col-md">
-                    <div class="form-floating">
-                        <select class="form-select" id="floatingSelectGrid">
+                    <div class="row">
+                    <div class="col">
+                    <div class="form-floating" style="width: 220px; height: 52px;">
+                        <select class="form-select border border-secondary rounded-3" id="floatingSelectGrid">
                             <option selected>Grade</option>
                             <option value="1">Excellent</option>
                             <option value="2">Good</option>
@@ -94,9 +94,9 @@
                         </select>
                     </div>
                     </div>
-                <div class="col-md">
-                    <div class="form-floating">
-                        <select class="form-select" id="floatingSelectGrid">
+                <div class="col">
+                    <div class="form-floating" style="width: 220px; height: 52px;">
+                        <select class="form-select border border-secondary rounded-3" id="floatingSelectGrid">
                             <option selected class="options">Date</option>
                             <option value="1">Start date of the trip</option>
                             <option value="2">Date of the event</option>
@@ -110,9 +110,9 @@
                     </div>
 
                 </div>                
-                <div class="col buner_explore_container">
+                <div class="col buner_explore_container" style="width: 650px;">
                     
-                    <img src="./images/thousand.svg" class="rounded ms-auto" alt="traveller's picture">
+                    <img src="./images/thousand.svg" class=" " alt="traveller's picture">
                 
                 </div>
             </div>            

@@ -28,13 +28,16 @@ ul {
     list-style: none;
 }
 
-/* .container {
-    max-width: 1215px;
+.container {
+    /* max-width: 1414px; */
     margin: 0 auto;
     padding: 0;
-} */
+}
 /* header */
 
+/* .explore_container{
+    max-width: 1303px;
+} */
 
 .navbar{
     margin-bottom: 72px;
@@ -54,7 +57,7 @@ ul {
     border-radius: 8px;
     width: 132px;
     height: 60px;
-
+    
     background: #fff;
     color:#fb8f1d;
     border: 1px solid #fb8f1d;
@@ -72,6 +75,10 @@ ul {
     border: 1px solid #fb8f1d;
 }
 
+/* .wrap{
+    flex-wrap: nowrap;
+} */
+
 .header_title{
     font-weight: 700;
     font-size: 64px;
@@ -83,6 +90,35 @@ ul {
     margin-bottom: 74px;
 }
 
+.holiday_title_wrap{ 
+    position: relative;   
+    margin-bottom: 74px;
+}
+
+.holiday_title_wrap::before{
+    content: url('./element2.svg');
+    position: absolute;
+    left: -14%;
+    top: 60%;
+
+    transform: translateY(90%);
+}
+
+.holiday_title_wrap::after {
+    content: url('/images/icons/Rectangle\ 29.svg');
+    position: absolute;
+    left: 0%;
+    top: 60%;
+    transform: translateY(70%);
+    z-index: -1;
+}
+
+.holiday_title{
+    font-weight: 600;
+    font-size: 22px;
+    color: #202336;
+}
+
 .form_title{
     font-weight: 400;
     font-size: 16px;
@@ -90,7 +126,12 @@ ul {
 
 .form-select{
     font-weight: 400;
-    font-size: 15px;    
+    font-size: 15px; 
+    
+     /* border: 0.80px solid #afb0b9;
+        border-radius: 6px;
+        width: 220px;
+        height: 52px;  */
         
     line-height: 2.13333;
     color: #4a4c53;
@@ -101,6 +142,16 @@ ul {
 /* button explore */
 .btn_explore_container{
     margin-top: 47px;
+    position: relative;
+}
+
+.btn_explore_container::after {
+    content: url('./element.svg');
+    position: absolute;
+    right: -18%;
+    bottom: -75%;
+
+    transform: translateY(20%);
 }
 
 .explore{
@@ -120,5 +171,6 @@ ul {
         left: -3%;
         top: 5%;
         
-        transform: translateY(-80%);
+        transform: translateY(-20%);
 }
+
