@@ -79,6 +79,9 @@ ul {
     flex-wrap: nowrap;
 } */
 
+.header{
+    margin-bottom: 256px;
+}
 .header_title{
     font-weight: 700;
     font-size: 64px;
@@ -96,7 +99,7 @@ ul {
 }
 
 .holiday_title_wrap::before{
-    content: url('./element2.svg');
+    content: url('/images/icons/element2.svg');
     position: absolute;
     left: -14%;
     top: 60%;
@@ -146,7 +149,7 @@ ul {
 }
 
 .btn_explore_container::after {
-    content: url('./element.svg');
+    content: url('/images/icons/element.svg');
     position: absolute;
     right: -18%;
     bottom: -75%;
@@ -166,7 +169,7 @@ ul {
 }
 
 .buner_explore_container::before{
-        content: url('./element3.svg');
+        content: url('/images/icons/element3.svg');
         position: absolute;
         left: -3%;
         top: 5%;
@@ -174,3 +177,82 @@ ul {
         transform: translateY(-20%);
 }
 
+/* section 2 */
+.wrapper_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 262px;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+    border: none;
+}
+
+.card_content::before{
+    content: url('/images/icons/element_section2.svg');
+    position: absolute;
+    left: -20%;
+    top: -10%;
+    
+    transform: translateY(90%);
+}
+
+.card_content{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+
+    margin-left: 102px;
+    padding-top: 112px;
+    /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
+    position: relative;
+}
+
+.title_section2{    
+    margin-bottom: 20px;
+    
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 36px;    
+       
+    line-height: 1.38889;
+    color: #000;
+}
+
+.card_content p{
+    font-family: "Mulish";
+    font-weight: 300;
+    font-size: 17px;    
+       
+    line-height: 1.76471;
+    color: #7d7987;
+    margin-bottom: 33px;
+}
+/* .card_content button{
+    
+} */
+
+.btn.card_btn{
+    width: 164px;
+    height: 48px;
+   
+    margin-bottom: 105px;
+    position: relative;
+}
+
+.btn.card_btn::after {
+    content: url('/images/icons/element2_section2.svg');
+    position: absolute;
+    left: 180%;
+    top: -50%;
+    transform: translateY(50%);
+    z-index: 1;
+}
