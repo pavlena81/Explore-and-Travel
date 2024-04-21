@@ -286,8 +286,16 @@ margin-bottom: 20px;
     position: relative;
 }
 
+.features_btn::before{
+    content: url('/images/icons/element3_featured.jpg');
+    position: absolute;
+    left: -92px;
+    top: -25px;
+    /* transform: translateY(50%); */
+}
+
 .features_btn::after{
-content: url('/images/icons/Vector_featured.svg');
+    content: url('/images/icons/Vector_featured.svg');
     position: absolute;
     left: 100%;
     top: -50%;
@@ -296,6 +304,7 @@ content: url('/images/icons/Vector_featured.svg');
 }
 
 .features_list{
+    position: relative;
     display: flex;
     gap: 25px;
     justify-content: space-between;
@@ -305,19 +314,39 @@ content: url('/images/icons/Vector_featured.svg');
       
 }
 
-.item{
+.features_list::before{
+    content: url('/images/icons/element_featured.jpg');    
+    top: 55%;
+    left: -96px;    
+    position: absolute;
+}
+
+.features_list::after{
+    content: url('/images/icons/element2_featured.svg');
+    bottom: -76px;
+    right: 55%;
+    position: absolute;
+
+    transform: translateY(50%);
+}
+
+.features_list .item{
     position: relative;
 }
 
-.text {
+.item > .text {
     position: absolute;
     bottom: 0;
-    left: 30%;
-    background-color: #fff;
-    /* Це робить фон прозорим */
-    padding: 10px;
+    left: 0;
+    background-color: #fff;   
+    /* padding: 10px; */
     z-index: 5;
+
+    border-radius: 0 6px 0 0;
+    width: 120px;
+    height: 56px;
 }
+
 .features_title_card{
     font-weight: 600;
     font-size: 17px;    
