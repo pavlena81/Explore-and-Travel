@@ -231,12 +231,12 @@ margin-bottom: 20px;
 }
 
 .card_content p{
-    font-family: "Mulish";
+    /* font-family: "Mulish";
     font-weight: 300;
     font-size: 17px;    
        
     line-height: 1.76471;
-    color: #7d7987;
+    color: #7d7987; */
     margin-bottom: 33px;
 }
 /* .card_content button{
@@ -361,4 +361,54 @@ margin-bottom: 20px;
        
     line-height: 1.6;
     color: #80918e;
+}
+
+/* section 4 */
+.sunny_section{
+    border: 1px solid tomato;
+}
+
+.sunny_section_wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 49px;
+
+}
+.card_guides_by{
+    width: 481px;
+    height: 303px;
+    margin-top: 152px;
+}
+.title_section.sunny{
+    margin-bottom: 20px;
+
+}
+.describes_section{
+    font-family: "Mulish";
+    font-weight: 300;
+    font-size: 17px;
+
+    line-height: 1.76471;
+    color: #7d7987;
+}
+
+.describes_section.sunny_guides{
+    margin-bottom: 33px;
+}
+
+.btn.sunny_btn{
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Inter";
+   
+    line-height: 3.75;
+    color: #fff;
+    background: #fb8f1d;;
+
+    width: 164px;
+    height: 48px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+   
 }
