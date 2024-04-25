@@ -32,7 +32,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Destinations</a>
+                            <a class="nav-link" href="#destination">Destinations</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -123,7 +123,7 @@
         <!--  -->
     </header>
     <main>
-        <section class="wrapper_section">
+        <section id="destination" class="wrapper_section">
             <div class="card">
                 <img class="card_image" src="./images/icons/Thousand-section2.svg" alt="traveller's picture" width="659">
                 
@@ -131,7 +131,7 @@
                     <h2 class="title_section card_title">A new way to explore the world</h2>
                     <p class="describes_section">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect
                     trip, but now, they can also let Lonely Planet Experiences lead the way</p>
-                    <button class="btn card_btn" type="button">Learn more</button>
+                    <button class="btn card_btn data-modal3-open" type="button">Learn more</button>
                 </div>
             </div>
         </section>
@@ -331,7 +331,56 @@
         <i class="fa-regular fa-circle-up"></i>       
     </button>
     </div>
+    <!-- modal -->
+<div class="backdrop__buy-now is-hidden data-modal3" data-modal3>
+
+    <div class="modal3 data-modal3">
+        <button type="button" class="modal3__close-btn data-modal3-close" data-modal3-close>
+            
+        x</button>
+        <form class="modal3-form" method="POST">
+            <b class="modal3-form__title">A new way to explore the world. Leave your details, we will call you back</b>
+            <label for="name" class="modal3-form__group">
+                <span class="modal3-form__tag">Name</span>
+                <input type="text" name="user-name" id="name" class="modal3-form__input" placeholder="">
+                
+            </label>
+            <label for="tel" class="modal3-form__group">
+                <span class="modal3-form__tag">Phone
+                <i class="fa-regular fa-phone"></i></span>
+                <input type="tel" name="user-phone" id="tel" class="modal3-form__input" placeholder="">
+               
+            </label>
+            <label for="email" class="modal3-form__group">
+                <span class="modal3-form__tag">Mail 
+                    <i class="fa-regular fa-envelope"></i></span>
+                <input type="email" name="email" id="email" class="modal3-form__input" placeholder="" >
+                
+               
+            </label>
+            <label for="comment" id="non-hidden" class="modal3-form__group">
+                <span class="modal3-form__tag">Your comments for us</span>
+                <textarea name="comment" id="comment" rows="5" class="modal3-form__textarea"
+                    placeholder="What is your ideal trip"></textarea>
+            </label>
+            <label class="modal3-form__group">
+                <input type="checkbox" name="checkbox" id="checkbox" class="modal3-field-checkbox visually-hidden"
+                    tabindex="-1" aria-hidden="true">
+                <span class="modal3-field-checkbox__group" tabindex="0" role="checkbox" aria-checked="true"
+                    aria-labelledby="checkbox">                    
+                </span>
+                <span class="modal3-field-checkbox__agreement">I agree with the newsletter and accept&nbsp;
+                    <a href="" class="modal3-field-checkbox__rules">Terms of an agreement</a>
+                </span>
+            </label>
+            
+        </form>
+        <button type="submit" class="modal3-form__btn-send-modal">Send</button>
+    </div>
+</div>
+
     <!-- ===== -->
+    <script src="./modal.js"></script>
     <script src="./index.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
