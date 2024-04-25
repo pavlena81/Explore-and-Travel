@@ -7,7 +7,10 @@
   --main-title-color: #fb8f1d;
   --accent-title-color: #ffa5ba;
   --icon-social-main-color: #7ce972;
-  --btn-main-color: rgb(245, 142, 59);  
+  --btn-main-color: rgb(245, 142, 59);
+  
+  --footer-bg-color: #f9f9fb;
+  --footer-color: #848484;
  
   --reviews-point-accent-color: #f5ca8b;
   
@@ -739,6 +742,103 @@ color: rgba(0, 0, 0, 0.85);
     border: none;
 }
 
+/* footer */
+.footer_section{
+    max-width:1640px;
+    background: var(--footer-bg-color);
+    padding: 70px 0 0 0;
+}
+
+.footer_wrap{
+    display: flex;
+    gap: 108px;
+    justify-content: center;
+}
+
+.footer_title{
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 316%;
+    color: #000;   
+}
+
+.footer_item{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 211%;
+    color: var(--footer-color);
+}
+
+.footer_item a{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 211%;
+    color: var(--footer-color);
+}
+
+.footer_wrap ul{
+    padding: 0px;
+}
+
+.footer_ts{
+    width: 391px;
+}
+
+/* .footer_logo{
+    margin-bottom: 26px;
+} */
+
+.footer_ts p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--footer-color);
+
+    margin-top: 26px;
+    margin-bottom: 55px;
+}
+
+.footer_title_accent{
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 165%;
+    color: var(--footer-color);
+}
+
+.footer_social_wrap{
+    text-align: center;
+}
+
+.footer_social_list {
+    list-style: none;   
+    padding: 0;   
+    margin: 0;   
+}
+
+
+.footer_social_list li {
+    display: inline-block;
+   
+    margin-right: 35px;   
+}
+
+
+.footer_social_list li a {
+    display: inline-block;    
+    width: 25px;   
+    height: 25px;   
+    line-height: 25px;  
+   
+    border-radius: 50%;
+   
+}
+
+/* Дополнительные стили для иконок (подключите иконки Font Awesome) */
+.footer_social_list li a i {
+    font-size: 20px;   
+}
+
+
 /* btnUpToTop */
 
 #myBtn {
@@ -902,7 +1002,7 @@ color: rgba(0, 0, 0, 0.85);
 
     &:hover,
     &:focus {
-        border-color: var(--btn-main-color);
+        border-color: var(--main-title-color);
     }
 }
 
@@ -933,7 +1033,7 @@ color: rgba(0, 0, 0, 0.85);
 
     &:hover,
     &:focus {
-        border-color: var(--btn-main-color);
+        border-color: var(--main-title-color);
     }
 
     &::placeholder {
@@ -1019,6 +1119,12 @@ color: rgba(0, 0, 0, 0.85);
 
 
 /* sighIn */
+.sighIn_container{
+    width: 1414px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 59px;
+}
 
 a {
     color: #333;
@@ -1155,6 +1261,10 @@ a {
     text-align: center;
     transform: translateY(0);
     transition: transform .6s ease-in-out;
+}
+
+.overlay-panel p{
+margin-bottom: 15px;
 }
 
 .overlay-right {
