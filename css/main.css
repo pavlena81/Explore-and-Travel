@@ -550,6 +550,11 @@ ul {
     border: none;
 }
 
+.card .card_image{
+    max-width: 100%;
+    width: auto;
+} 
+
 .card_content::before{
     content: url('../images/icons/element_section2.svg');
     position: absolute;
