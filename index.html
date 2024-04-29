@@ -52,6 +52,39 @@
             </div>
         </nav>
 
+        <!-- mob menu -->
+        <div class="mobile-menu" data-menu>
+            <a class="navbar-logo" href="#">
+                <img src="./images/logo.svg" alt="Логотип"></a>
+                
+            
+
+            <div class="nav_button_group">
+                <button class="btn btn-outline-success me-3" type="button" onclick="location.href='sighIn.html'">Login</button>
+                <button class="btn btn-outline-success" type="button" onclick="location.href='sighIn.html'">Register</button>
+            </div>
+
+            <ul class="mobile-menu__nav list">
+                <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--current"
+                        href="./index.html">Home</a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link" href="#destination">Destinations</a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link" href=" ">About</a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link" href=" ">Partner</a></li>
+            </ul>
+          
+        <button class="mobile-menu__btn" type="button" data-menu-button aria-expanded="false">
+            <svg class="mobile-menu__icon" width="40" height="40">
+                <use class="icon__open" href="./images/icons/symbol-defs.svg#icon-menu"></use>
+                <use class="icon__close" href="./images/icons/symbol-defs.svg#icon-close-burger"></use>
+            </svg>
+        </button>
+        
+        </div>
+        
+        
+        
+        </div> -->
+
         <div class="container-fluid explore_container">
             <div class="row ">
                 <div class="col">
@@ -444,7 +477,7 @@
 </div>
 
     <!-- ===== -->
-    
+    <script src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
     <script src="./index.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
