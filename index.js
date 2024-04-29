@@ -27,6 +27,14 @@ console.log(myButton);
   document.documentElement.scrollTop = 0;
 }
 
+const titles = document.querySelectorAll('.footer_title');
+
+titles.forEach(title => {
+    title.addEventListener('click', () => {
+        const list = title.nextElementSibling;
+        list.classList.toggle('active');
+    });
+});
 
 // data modal 
 
