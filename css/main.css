@@ -15,6 +15,7 @@
   --reviews-point-accent-color: #f5ca8b;
   
   --border-color: #e1e1e1;
+  --input-accent-color: #D3D3D3;
   --btn-main-color: ;
 }
 
@@ -1675,7 +1676,7 @@ transition: transform 0.7s ease;
 
 /* sighIn */
 .sighIn_container{
-    width: 1414px;
+    max-width: 1414px;
     margin: 0 auto;
     padding: 0 15px;
     padding-top: 59px;
@@ -1771,6 +1772,15 @@ a {
     left: 0;
     width: 50%;
     z-index: 2;
+}
+
+ .autoInput:hover,
+ .autoInput:focus{
+    border:1 solid var(--input-accent-color);
+}
+
+.autoInput:active{
+    border: 1px solid var(--main-title-color);
 }
 
 .sign-up-container {
@@ -1881,6 +1891,7 @@ margin-bottom: 15px;
     position: absolute;
     top: 20px;   
     left: 20px;
+    z-index: 5;
    
 }
 
