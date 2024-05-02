@@ -17,12 +17,14 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/icon" >
 </head>
 <body class="container">
-    <div>
+   
+<div>       
     <header class="header">
+
         <nav class="navbar navbar-expand-lg justify-content-between">
             <div class="container-fluid">                
                 <a class="navbar-brand" href="#">
-                <img src="./images/logo.svg" alt="Логотип"></a>
+                <img src="./images/logo.svg" alt="Логотип"/></a>
                 
                 <div class="d-grid gap-3 d-md-flex justify-content-md-end">
 
@@ -151,9 +153,12 @@
             </div>            
         </div>
 
-    </div> 
+   
         <!--  -->
+
+        
     </header>
+</div>   
     <main>
         <section id="destination" class="wrapper_section">
             <div class="card">
@@ -282,10 +287,14 @@
                         <div>
                             <picture>
                                 <source srcset="./images/image12_blog.jpg 1x,
-                                                    ./images/image12_blog_x2.jpg 2x" media="(min-width: 1200px)"
-                                    type="image/jpeg" />
+                                                    ./images/image12_blog_x2.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/jpeg" />
                                 
-                                <img class="card__img_blog" src="./images/image12_blog.jpg" alt="photo blog" width="261" />
+                                <img class="card__img_blog" 
+                                     src="./images/image12_blog.jpg" 
+                                     alt="photo blog" 
+                                     width="261" />
                             </picture>
             
                         </div>
@@ -303,10 +312,13 @@
                         <picture>
                             <source srcset="./images/image13_blog.jpg 1x,
                                              ./images/image13_blog_x2.jpg 2x" 
-                                type="image/jpeg" />
+                                    type="image/jpeg" />
                             
             
-                            <img class="card__img_blog" src="./images/image13_blog.jpg" alt="photo blog" width="261" />
+                            <img class="card__img_blog" 
+                                 src="./images/image13_blog.jpg" 
+                                 alt="photo blog" 
+                                 width="261" />
                         </picture>
             
                         <div class="blog__card">
@@ -365,7 +377,7 @@
                 <p>Plan and book your perfect trip with
                 expert advice, travel tips destination
                 information from us</p>
-                <h3 class="footer_title_accent">©2020 Thousand Sunny. All rights reserved</h2>
+                <h3 class="footer_title_accent">©2020 Thousand Sunny. All rights reserved</h3>
 
             </div>
             <div>
@@ -409,7 +421,7 @@
                 </ul>
             </div>
         </div>
-        <hr style="width: 1219px; margin-bottom: 30px;">
+        <hr style="max-width: 1219px; width:auto; margin-bottom: 30px;">
         <div class="footer_social_wrap">
             <ul class="footer_social_list">
                 <li><a href="https://www.twitter.com/" target="_blank" rel="noreferrer noopener" title="Twitter social network">
@@ -423,12 +435,10 @@
         </div>
         
     </footer>
-    <button id="myBtn" title="Go to top">
-        <i class="fa-regular fa-circle-up"></i>       
-    </button>
-    </div>
+    
+<!-- </div> -->
     <!-- modal -->
-<div class="backdrop__buy-now is-hidden data-modal3" data-modal3>
+<div class="backdrop__now is-hidden data-modal3" data-modal3>
 
     <div class="modal3 data-modal3">
         <button type="button" class="modal3__close-btn data-modal3-close" data-modal3-close>
@@ -474,7 +484,9 @@
         <button type="submit" class="modal3-form__btn-send-modal">Send</button>
     </div>
 </div>
-
+<button id="myBtn" title="Go to top">
+    <i class="fa-regular fa-circle-up"></i>
+</button>
     <!-- ===== -->
     <script src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
